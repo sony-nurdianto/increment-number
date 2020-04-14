@@ -6,7 +6,7 @@ class Buttons extends Component {
     constructor(props){
         super(props)
         this.state ={
-            text : 0
+            text : 0   
         }
     }
     
@@ -29,7 +29,7 @@ class Buttons extends Component {
             <div>
                 <div>
                     <Button onClick={this.clicked1} primary>tambah</Button>
-                    <input type="number" value={this.state.text}></input>
+                    <Input type="text" value={this.state.text}></Input>
                     <Button onClick={this.clicked2} primary>kurang</Button>
                 </div>
                 <div>
@@ -44,6 +44,16 @@ class Buttons extends Component {
 export default Buttons
 
 
+
+const Input = Styled.input`
+margin: 1em;
+padding: 0.25em 1em;
+border: 2px solid palevioletred;
+border-radius: 3px;
+height : 2.5em;
+text-align : center;
+height : 2em;
+`
 
 const Button  = Styled.button
 `
