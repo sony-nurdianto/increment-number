@@ -21,11 +21,7 @@ class Buttons extends Component {
         this.setState ({text : this.state.text -1});
     }
     clicked3 = () =>{
-        let reset = this.state.text 
-
-        if (reset > 0){
-            return reset = 0
-        }
+        this.setState ({text : 0})
     }
     
     render(){
